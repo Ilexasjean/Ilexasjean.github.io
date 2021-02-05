@@ -1,0 +1,348 @@
+body {background-color: black;
+    color: #FA9AEC;
+    font-size:20px;
+    background-image: url(../assets/images/backround.png);
+    background-size: 500px 500px;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*float:right;*/
+    position: absolute;
+    right: 0;
+    font-family: 'Patua One', cursive; 
+    font-size: 20px;
+    z-index: 1;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #FABBEC; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #FA9AEC;;
+}
+li a:active{}
+body {
+    background-color: black;
+    font-family: cursive;
+}
+
+.glow {
+    font-family: 'Patua One', cursive; 
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    float:left;
+    padding-left: 40px;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #ff4da6, 0 0 30px #ff4da6,
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: 'Patua One', cursive;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-family: 'Patua One', cursive;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/*.container {
+border-radius: 5px;
+padding: 20px;
+}*/
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    font-family: 'Patua One', cursive; 
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    font-family: 'Patua One', cursive; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa-instagram {
+    color: #FA9AEC;
+    float:right;
+}
+
+.fa-facebook {
+    color: #FA9AEC;
+    float:right;
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 30px;
+    vertical-align: middle;
+    padding-left: 50px;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#FA9AEC; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #E66D87; 
+}
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Grid */
+.o-grid {
+    width: 100%;
+    padding-left:40px;
+
+}
+
+@media (min-width: 768px) {
+    .o-grid--alternate .o-grid__row:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+
+.o-grid__row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .o-grid__row {
+        flex-direction: row;
+    }
+}
+
+.o-grid__item {
+    flex: 1;
+    color: #FFC9E8;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    float:left;
+}
+
+/* Ratio objects */
+.o-ratio {
+    position: relative;
+}
+.o-ratio::before {
+    display: block;
+    content: "";
+    width: 100%;
+    /*padding-bottom: 100%;*/
+}
+.o-ratio > .o-ratio__content {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.o-ratio--16\:9::before {
+    /*padding-bottom: 56.25%;*/
+}
+
+/* Box object */
+.o-box {
+    display: flex;
+    /*height: 100%;*/
+    flex-direction: column;
+    justify-content: center;
+}
+
+.o-box--small {
+    padding: 40px;
+}
+
+/* For presentation purposes only */
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+
+a {
+    color:#FA9AEC;
+}
+h3{
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    padding-top:50px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:black;
+  
+}
+
+.container:hover .overlay {
+    opacity: 0.7;
+     z-index: -1;
+}
+
+.text {
+    color: white;
+    font-size: 23px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+video{
+    
+}
